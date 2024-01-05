@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2387e77f62d3829d3df2dba4016921ca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2387e77f62d3829d3df2dba4016921ca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2387e77f62d3829d3df2dba4016921ca = L.map(
+                "map_2387e77f62d3829d3df2dba4016921ca",
+                {
+                    center: [-7.7956, 110.3695],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da9689a63a4a7e3f171ef921768f866a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_da9689a63a4a7e3f171ef921768f866a.addTo(map_2387e77f62d3829d3df2dba4016921ca);
+        
+    
+            var marker_cluster_31404595c7ec99aa988507596057efdb = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_895ee74dc0a376049b8aa6c61df5f9e4 = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_92774d6059c8169fbdcde03fb23e189f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad2f12378bdd21adeaad46170122ef4 = $(`<div id="html_dad2f12378bdd21adeaad46170122ef4" style="width: 100.0%; height: 100.0%;">Harga: 45000 Rp/Kg Tanggal: 2023-04-24</div>`)[0];
+                popup_92774d6059c8169fbdcde03fb23e189f.setContent(html_dad2f12378bdd21adeaad46170122ef4);
+            
+        
+
+        marker_895ee74dc0a376049b8aa6c61df5f9e4.bindPopup(popup_92774d6059c8169fbdcde03fb23e189f)
+        ;
+
+        
+    
+    
+            var marker_0e5c49f3b9262eecad76a8afe27e43ff = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_caf8d3f386eb714d4268ed9515a7d02f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b6968a7e4ea466a03014d6c297e344e = $(`<div id="html_5b6968a7e4ea466a03014d6c297e344e" style="width: 100.0%; height: 100.0%;">Harga: 43000 Rp/Kg Tanggal: 2023-04-27</div>`)[0];
+                popup_caf8d3f386eb714d4268ed9515a7d02f.setContent(html_5b6968a7e4ea466a03014d6c297e344e);
+            
+        
+
+        marker_0e5c49f3b9262eecad76a8afe27e43ff.bindPopup(popup_caf8d3f386eb714d4268ed9515a7d02f)
+        ;
+
+        
+    
+    
+            var marker_a0af7e29c32241149fe54913f4b51cb5 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_0e2663e8843aef5739c2c01324fe0b83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0a768af93a63c7a958d1a2959513efe = $(`<div id="html_b0a768af93a63c7a958d1a2959513efe" style="width: 100.0%; height: 100.0%;">Harga: 33000 Rp/Kg Tanggal: 2023-05-15</div>`)[0];
+                popup_0e2663e8843aef5739c2c01324fe0b83.setContent(html_b0a768af93a63c7a958d1a2959513efe);
+            
+        
+
+        marker_a0af7e29c32241149fe54913f4b51cb5.bindPopup(popup_0e2663e8843aef5739c2c01324fe0b83)
+        ;
+
+        
+    
+    
+            var marker_c8028f3a2ef74e5ed69f1c02ecd05221 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_e05e377242ddb91c74ac246d05972662 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2fa433e7d3a8cdd23fb15d664808b3d = $(`<div id="html_f2fa433e7d3a8cdd23fb15d664808b3d" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-05-19</div>`)[0];
+                popup_e05e377242ddb91c74ac246d05972662.setContent(html_f2fa433e7d3a8cdd23fb15d664808b3d);
+            
+        
+
+        marker_c8028f3a2ef74e5ed69f1c02ecd05221.bindPopup(popup_e05e377242ddb91c74ac246d05972662)
+        ;
+
+        
+    
+    
+            var marker_fd0ec243722b8e32da87bdae6ae10fbc = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_ceec44ea7a762beef2faf644f542c361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ed9bb0dc04385f681848a3d51313557 = $(`<div id="html_9ed9bb0dc04385f681848a3d51313557" style="width: 100.0%; height: 100.0%;">Harga: 38000 Rp/Kg Tanggal: 2023-05-22</div>`)[0];
+                popup_ceec44ea7a762beef2faf644f542c361.setContent(html_9ed9bb0dc04385f681848a3d51313557);
+            
+        
+
+        marker_fd0ec243722b8e32da87bdae6ae10fbc.bindPopup(popup_ceec44ea7a762beef2faf644f542c361)
+        ;
+
+        
+    
+    
+            var marker_f6455db79ded54c5d74528a059beb3d2 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_da732255d22103def7c987a06a5dee4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffbd07cba81757f45d20116e685b28cb = $(`<div id="html_ffbd07cba81757f45d20116e685b28cb" style="width: 100.0%; height: 100.0%;">Harga: 31000 Rp/Kg Tanggal: 2023-05-29</div>`)[0];
+                popup_da732255d22103def7c987a06a5dee4f.setContent(html_ffbd07cba81757f45d20116e685b28cb);
+            
+        
+
+        marker_f6455db79ded54c5d74528a059beb3d2.bindPopup(popup_da732255d22103def7c987a06a5dee4f)
+        ;
+
+        
+    
+    
+            var marker_94074ef9534288495fd7ec88015774cf = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_e5a89a6fe032be41f567621f1b581042 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40d6efe83d9562979f170876de678f20 = $(`<div id="html_40d6efe83d9562979f170876de678f20" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-06-02</div>`)[0];
+                popup_e5a89a6fe032be41f567621f1b581042.setContent(html_40d6efe83d9562979f170876de678f20);
+            
+        
+
+        marker_94074ef9534288495fd7ec88015774cf.bindPopup(popup_e5a89a6fe032be41f567621f1b581042)
+        ;
+
+        
+    
+    
+            var marker_e0d595e21394d768e5a3f028cc5f881c = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_c8f2920809eb9fadb96eab98f9d4eb36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4102c1a0fe78e91b4d9b878f781ca3bd = $(`<div id="html_4102c1a0fe78e91b4d9b878f781ca3bd" style="width: 100.0%; height: 100.0%;">Harga: 38000 Rp/Kg Tanggal: 2023-06-05</div>`)[0];
+                popup_c8f2920809eb9fadb96eab98f9d4eb36.setContent(html_4102c1a0fe78e91b4d9b878f781ca3bd);
+            
+        
+
+        marker_e0d595e21394d768e5a3f028cc5f881c.bindPopup(popup_c8f2920809eb9fadb96eab98f9d4eb36)
+        ;
+
+        
+    
+    
+            var marker_f30510108aab6251519596adc2a95c38 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_58012cf4b7376a0f84f23082876e6430 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bbd31a3728241f3e37d0b48382113de = $(`<div id="html_7bbd31a3728241f3e37d0b48382113de" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-06-08</div>`)[0];
+                popup_58012cf4b7376a0f84f23082876e6430.setContent(html_7bbd31a3728241f3e37d0b48382113de);
+            
+        
+
+        marker_f30510108aab6251519596adc2a95c38.bindPopup(popup_58012cf4b7376a0f84f23082876e6430)
+        ;
+
+        
+    
+    
+            var marker_de1ffde12715c26741969752fb99a258 = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_172b05f176ef2e92b0b62e6e536da2c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eb488485df8dcf0f8dd714266f415ef = $(`<div id="html_4eb488485df8dcf0f8dd714266f415ef" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-06-12</div>`)[0];
+                popup_172b05f176ef2e92b0b62e6e536da2c6.setContent(html_4eb488485df8dcf0f8dd714266f415ef);
+            
+        
+
+        marker_de1ffde12715c26741969752fb99a258.bindPopup(popup_172b05f176ef2e92b0b62e6e536da2c6)
+        ;
+
+        
+    
+    
+            var marker_287fe459c887f65e3ebc2208f3f3da51 = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_acb01924d317bcbe6eee17d9e6139955 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18d492375d70cb3542b201a203c61dbc = $(`<div id="html_18d492375d70cb3542b201a203c61dbc" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-06-15</div>`)[0];
+                popup_acb01924d317bcbe6eee17d9e6139955.setContent(html_18d492375d70cb3542b201a203c61dbc);
+            
+        
+
+        marker_287fe459c887f65e3ebc2208f3f3da51.bindPopup(popup_acb01924d317bcbe6eee17d9e6139955)
+        ;
+
+        
+    
+    
+            var marker_251328c95370b8b8f645baf205288b7a = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_c8b93ed3e53eaeb6547da9fc600d48c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67062b55991d0f1eb30062633bd7f707 = $(`<div id="html_67062b55991d0f1eb30062633bd7f707" style="width: 100.0%; height: 100.0%;">Harga: 38000 Rp/Kg Tanggal: 2023-06-19</div>`)[0];
+                popup_c8b93ed3e53eaeb6547da9fc600d48c6.setContent(html_67062b55991d0f1eb30062633bd7f707);
+            
+        
+
+        marker_251328c95370b8b8f645baf205288b7a.bindPopup(popup_c8b93ed3e53eaeb6547da9fc600d48c6)
+        ;
+
+        
+    
+    
+            var marker_67ae4fe892a5009d2a3d1b719b3ab4a8 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_d73712b165a53f29477d7eefbf49b439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_866793fd1cdcaf249963dac5175e9205 = $(`<div id="html_866793fd1cdcaf249963dac5175e9205" style="width: 100.0%; height: 100.0%;">Harga: 38000 Rp/Kg Tanggal: 2023-06-22</div>`)[0];
+                popup_d73712b165a53f29477d7eefbf49b439.setContent(html_866793fd1cdcaf249963dac5175e9205);
+            
+        
+
+        marker_67ae4fe892a5009d2a3d1b719b3ab4a8.bindPopup(popup_d73712b165a53f29477d7eefbf49b439)
+        ;
+
+        
+    
+    
+            var marker_2434b5836677315c6959c2935524b4e8 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_3be3882bdbde4502ac7ede3a7f08c093 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6558c23daae0085235caf948531d0c5 = $(`<div id="html_e6558c23daae0085235caf948531d0c5" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-06-26</div>`)[0];
+                popup_3be3882bdbde4502ac7ede3a7f08c093.setContent(html_e6558c23daae0085235caf948531d0c5);
+            
+        
+
+        marker_2434b5836677315c6959c2935524b4e8.bindPopup(popup_3be3882bdbde4502ac7ede3a7f08c093)
+        ;
+
+        
+    
+    
+            var marker_60248ff3fed2fecded2bcc8e22829f5d = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_3da73f217e4ff7da3ac47ce3c4777ab0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97226a977ac1da224ac6f92d7bbea268 = $(`<div id="html_97226a977ac1da224ac6f92d7bbea268" style="width: 100.0%; height: 100.0%;">Harga: 40000 Rp/Kg Tanggal: 2023-06-30</div>`)[0];
+                popup_3da73f217e4ff7da3ac47ce3c4777ab0.setContent(html_97226a977ac1da224ac6f92d7bbea268);
+            
+        
+
+        marker_60248ff3fed2fecded2bcc8e22829f5d.bindPopup(popup_3da73f217e4ff7da3ac47ce3c4777ab0)
+        ;
+
+        
+    
+    
+            var marker_d230e5aa66ac06d2bc50ba592dfff38c = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_1db8e76de720e93015a2f412f2c1fcf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cccd1b940af6b2786ab8444f678514c7 = $(`<div id="html_cccd1b940af6b2786ab8444f678514c7" style="width: 100.0%; height: 100.0%;">Harga: 38000 Rp/Kg Tanggal: 2023-07-03</div>`)[0];
+                popup_1db8e76de720e93015a2f412f2c1fcf4.setContent(html_cccd1b940af6b2786ab8444f678514c7);
+            
+        
+
+        marker_d230e5aa66ac06d2bc50ba592dfff38c.bindPopup(popup_1db8e76de720e93015a2f412f2c1fcf4)
+        ;
+
+        
+    
+    
+            var marker_b76ff6c244f5377ed6f162c4fb33d35e = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_bc1602ef6e0b5fe39e97a04f73e6f05d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41cacc3f38e9f4a4789a278914e98804 = $(`<div id="html_41cacc3f38e9f4a4789a278914e98804" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-06</div>`)[0];
+                popup_bc1602ef6e0b5fe39e97a04f73e6f05d.setContent(html_41cacc3f38e9f4a4789a278914e98804);
+            
+        
+
+        marker_b76ff6c244f5377ed6f162c4fb33d35e.bindPopup(popup_bc1602ef6e0b5fe39e97a04f73e6f05d)
+        ;
+
+        
+    
+    
+            var marker_a941710a2f322b77ede89e456d8596bf = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_b301b94c8d6bca5218c756d3aa88cd1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5635a549bdf6f3af43864b92189b7230 = $(`<div id="html_5635a549bdf6f3af43864b92189b7230" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-10</div>`)[0];
+                popup_b301b94c8d6bca5218c756d3aa88cd1a.setContent(html_5635a549bdf6f3af43864b92189b7230);
+            
+        
+
+        marker_a941710a2f322b77ede89e456d8596bf.bindPopup(popup_b301b94c8d6bca5218c756d3aa88cd1a)
+        ;
+
+        
+    
+    
+            var marker_96e694501d7078fc45d2f2f87308391b = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_d21b86d9dc285ec1b333c0d44664fe5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3983ed2d2ea41c739ab0a708884214d5 = $(`<div id="html_3983ed2d2ea41c739ab0a708884214d5" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-13</div>`)[0];
+                popup_d21b86d9dc285ec1b333c0d44664fe5b.setContent(html_3983ed2d2ea41c739ab0a708884214d5);
+            
+        
+
+        marker_96e694501d7078fc45d2f2f87308391b.bindPopup(popup_d21b86d9dc285ec1b333c0d44664fe5b)
+        ;
+
+        
+    
+    
+            var marker_125abc68131c74ed4d63a37cfcde5600 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_f1be8c6c1be31c1499ad60ddc3c92520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41c1e1ca6efa0ee789084940f46fe275 = $(`<div id="html_41c1e1ca6efa0ee789084940f46fe275" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-17</div>`)[0];
+                popup_f1be8c6c1be31c1499ad60ddc3c92520.setContent(html_41c1e1ca6efa0ee789084940f46fe275);
+            
+        
+
+        marker_125abc68131c74ed4d63a37cfcde5600.bindPopup(popup_f1be8c6c1be31c1499ad60ddc3c92520)
+        ;
+
+        
+    
+    
+            var marker_60f83a8a2717be05fdc04961542ec223 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_27582bb03bd3369bb54eac1aed2d4e3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91dd57aa5d8d2589c936b8542c21b7be = $(`<div id="html_91dd57aa5d8d2589c936b8542c21b7be" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-24</div>`)[0];
+                popup_27582bb03bd3369bb54eac1aed2d4e3e.setContent(html_91dd57aa5d8d2589c936b8542c21b7be);
+            
+        
+
+        marker_60f83a8a2717be05fdc04961542ec223.bindPopup(popup_27582bb03bd3369bb54eac1aed2d4e3e)
+        ;
+
+        
+    
+    
+            var marker_890347125eca1278f66cf279b135b803 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_4bf48691a831268101839c1c16444466 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d0ee8456376bc81b2882e9a2ea400db = $(`<div id="html_4d0ee8456376bc81b2882e9a2ea400db" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-07-27</div>`)[0];
+                popup_4bf48691a831268101839c1c16444466.setContent(html_4d0ee8456376bc81b2882e9a2ea400db);
+            
+        
+
+        marker_890347125eca1278f66cf279b135b803.bindPopup(popup_4bf48691a831268101839c1c16444466)
+        ;
+
+        
+    
+    
+            var marker_73f414b324ec72c8d3da6d3ffcbb9a7f = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_a5eaac5c674bc04dce980bb0af2f3643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa46b0a809bfb45c1b96ca25e0a73ef2 = $(`<div id="html_aa46b0a809bfb45c1b96ca25e0a73ef2" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-08-03</div>`)[0];
+                popup_a5eaac5c674bc04dce980bb0af2f3643.setContent(html_aa46b0a809bfb45c1b96ca25e0a73ef2);
+            
+        
+
+        marker_73f414b324ec72c8d3da6d3ffcbb9a7f.bindPopup(popup_a5eaac5c674bc04dce980bb0af2f3643)
+        ;
+
+        
+    
+    
+            var marker_420f11307e44a00c7bce2ed940c0b3c1 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_e8705cf102a71738344cb8a1771c150b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0b4db3b599cfbb9c7ae9b62fe371894 = $(`<div id="html_f0b4db3b599cfbb9c7ae9b62fe371894" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-08-07</div>`)[0];
+                popup_e8705cf102a71738344cb8a1771c150b.setContent(html_f0b4db3b599cfbb9c7ae9b62fe371894);
+            
+        
+
+        marker_420f11307e44a00c7bce2ed940c0b3c1.bindPopup(popup_e8705cf102a71738344cb8a1771c150b)
+        ;
+
+        
+    
+    
+            var marker_735db487dfd55b447fff005c2f726060 = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_de3c7c50b138516c3ff6aeaed446b37b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b92fb1e5798b815a4a0db53c4dcc61f6 = $(`<div id="html_b92fb1e5798b815a4a0db53c4dcc61f6" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-08-10</div>`)[0];
+                popup_de3c7c50b138516c3ff6aeaed446b37b.setContent(html_b92fb1e5798b815a4a0db53c4dcc61f6);
+            
+        
+
+        marker_735db487dfd55b447fff005c2f726060.bindPopup(popup_de3c7c50b138516c3ff6aeaed446b37b)
+        ;
+
+        
+    
+    
+            var marker_397b1685042db854ac5d7bf76d665827 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_f007c71e52e8031229cc3af6d1042afa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6a07f00392f68ad763a7e828ecd141 = $(`<div id="html_1a6a07f00392f68ad763a7e828ecd141" style="width: 100.0%; height: 100.0%;">Harga: 37000 Rp/Kg Tanggal: 2023-08-17</div>`)[0];
+                popup_f007c71e52e8031229cc3af6d1042afa.setContent(html_1a6a07f00392f68ad763a7e828ecd141);
+            
+        
+
+        marker_397b1685042db854ac5d7bf76d665827.bindPopup(popup_f007c71e52e8031229cc3af6d1042afa)
+        ;
+
+        
+    
+    
+            var marker_9ccc47aafae113608ce618cc49a49115 = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_f82e5d1a1be9e66ebd41bd572f56e64e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e849667fa0f73d9517e88c2db3223ff = $(`<div id="html_6e849667fa0f73d9517e88c2db3223ff" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-08-21</div>`)[0];
+                popup_f82e5d1a1be9e66ebd41bd572f56e64e.setContent(html_6e849667fa0f73d9517e88c2db3223ff);
+            
+        
+
+        marker_9ccc47aafae113608ce618cc49a49115.bindPopup(popup_f82e5d1a1be9e66ebd41bd572f56e64e)
+        ;
+
+        
+    
+    
+            var marker_8169516768caa4efe988768ff900078d = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_b74b96c46785db61a997df8c67ad0f8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6041d64996d917539a5ac3eb1fd6cbad = $(`<div id="html_6041d64996d917539a5ac3eb1fd6cbad" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-08-24</div>`)[0];
+                popup_b74b96c46785db61a997df8c67ad0f8a.setContent(html_6041d64996d917539a5ac3eb1fd6cbad);
+            
+        
+
+        marker_8169516768caa4efe988768ff900078d.bindPopup(popup_b74b96c46785db61a997df8c67ad0f8a)
+        ;
+
+        
+    
+    
+            var marker_6bc372940116bfc734007f29cfbf411c = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_b7913ff62be8dbc348593337f31c2212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d0950cace7ebdae5672c008524984d2 = $(`<div id="html_5d0950cace7ebdae5672c008524984d2" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-08-28</div>`)[0];
+                popup_b7913ff62be8dbc348593337f31c2212.setContent(html_5d0950cace7ebdae5672c008524984d2);
+            
+        
+
+        marker_6bc372940116bfc734007f29cfbf411c.bindPopup(popup_b7913ff62be8dbc348593337f31c2212)
+        ;
+
+        
+    
+    
+            var marker_ec888852959d9f01165673efa856f352 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_9f092e5cc486b0dffe440b146c2d68d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16872b48f7d38dc354bcb20def292cc1 = $(`<div id="html_16872b48f7d38dc354bcb20def292cc1" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-08-31</div>`)[0];
+                popup_9f092e5cc486b0dffe440b146c2d68d5.setContent(html_16872b48f7d38dc354bcb20def292cc1);
+            
+        
+
+        marker_ec888852959d9f01165673efa856f352.bindPopup(popup_9f092e5cc486b0dffe440b146c2d68d5)
+        ;
+
+        
+    
+    
+            var marker_e0ddf098d71008483da5c52cbfdbb844 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_b7dc526cfe084b044c475a093ba1b7ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86ba3f825bc3ac6b80d2db43b013e66 = $(`<div id="html_e86ba3f825bc3ac6b80d2db43b013e66" style="width: 100.0%; height: 100.0%;">Harga: 37000 Rp/Kg Tanggal: 2023-09-04</div>`)[0];
+                popup_b7dc526cfe084b044c475a093ba1b7ed.setContent(html_e86ba3f825bc3ac6b80d2db43b013e66);
+            
+        
+
+        marker_e0ddf098d71008483da5c52cbfdbb844.bindPopup(popup_b7dc526cfe084b044c475a093ba1b7ed)
+        ;
+
+        
+    
+    
+            var marker_6106b03191686308588ab8a6c5874d9d = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_89d25515196b7102134ce8142d489924 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d552f85c89d8779cbd40aba5a989a2d = $(`<div id="html_3d552f85c89d8779cbd40aba5a989a2d" style="width: 100.0%; height: 100.0%;">Harga: 37000 Rp/Kg Tanggal: 2023-09-07</div>`)[0];
+                popup_89d25515196b7102134ce8142d489924.setContent(html_3d552f85c89d8779cbd40aba5a989a2d);
+            
+        
+
+        marker_6106b03191686308588ab8a6c5874d9d.bindPopup(popup_89d25515196b7102134ce8142d489924)
+        ;
+
+        
+    
+    
+            var marker_5403e20ceeb9fb6b1be5c22ae835cfd3 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_ee63bdfa13c15288f656f2ec523a83c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4113ee43620daf8247e15ee3b6179b5d = $(`<div id="html_4113ee43620daf8247e15ee3b6179b5d" style="width: 100.0%; height: 100.0%;">Harga: 37000 Rp/Kg Tanggal: 2023-09-11</div>`)[0];
+                popup_ee63bdfa13c15288f656f2ec523a83c6.setContent(html_4113ee43620daf8247e15ee3b6179b5d);
+            
+        
+
+        marker_5403e20ceeb9fb6b1be5c22ae835cfd3.bindPopup(popup_ee63bdfa13c15288f656f2ec523a83c6)
+        ;
+
+        
+    
+    
+            var marker_02d59d771b335876e6a5cf8c31b4fbc5 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_709ebf86183689e137c027f225637958 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4129983a43fc862ab07312ca6a2ae5f3 = $(`<div id="html_4129983a43fc862ab07312ca6a2ae5f3" style="width: 100.0%; height: 100.0%;">Harga: 36000 Rp/Kg Tanggal: 2023-09-14</div>`)[0];
+                popup_709ebf86183689e137c027f225637958.setContent(html_4129983a43fc862ab07312ca6a2ae5f3);
+            
+        
+
+        marker_02d59d771b335876e6a5cf8c31b4fbc5.bindPopup(popup_709ebf86183689e137c027f225637958)
+        ;
+
+        
+    
+    
+            var marker_fe8e360dc002a199d776695ba19ea214 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_080d5f9b4b930d64e8bf67d777ab6b2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89f48252c8d4cb76da4368ee10bd1521 = $(`<div id="html_89f48252c8d4cb76da4368ee10bd1521" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-09-18</div>`)[0];
+                popup_080d5f9b4b930d64e8bf67d777ab6b2b.setContent(html_89f48252c8d4cb76da4368ee10bd1521);
+            
+        
+
+        marker_fe8e360dc002a199d776695ba19ea214.bindPopup(popup_080d5f9b4b930d64e8bf67d777ab6b2b)
+        ;
+
+        
+    
+    
+            var marker_55d7cd1ba97093fb4b6dd8cb6127df0f = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_423a058c57731c4271cc662996bc74e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba24a7d8e5ddf3981e5827ca6c18cbff = $(`<div id="html_ba24a7d8e5ddf3981e5827ca6c18cbff" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-09-21</div>`)[0];
+                popup_423a058c57731c4271cc662996bc74e0.setContent(html_ba24a7d8e5ddf3981e5827ca6c18cbff);
+            
+        
+
+        marker_55d7cd1ba97093fb4b6dd8cb6127df0f.bindPopup(popup_423a058c57731c4271cc662996bc74e0)
+        ;
+
+        
+    
+    
+            var marker_d155eeec4d78d5d1cc24e172656d9641 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_ca67d630258b24d5f881e5bc7acf66d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23bc21bba1d85f052ea682a5bfe3ad4f = $(`<div id="html_23bc21bba1d85f052ea682a5bfe3ad4f" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-09-25</div>`)[0];
+                popup_ca67d630258b24d5f881e5bc7acf66d2.setContent(html_23bc21bba1d85f052ea682a5bfe3ad4f);
+            
+        
+
+        marker_d155eeec4d78d5d1cc24e172656d9641.bindPopup(popup_ca67d630258b24d5f881e5bc7acf66d2)
+        ;
+
+        
+    
+    
+            var marker_496a71a83ef6c8b5bd6f4fee24106414 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_8da2797e4dea62ffd73f4e99d93781be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d2520b8041f499e13637f46c3a4b459 = $(`<div id="html_7d2520b8041f499e13637f46c3a4b459" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-09-29</div>`)[0];
+                popup_8da2797e4dea62ffd73f4e99d93781be.setContent(html_7d2520b8041f499e13637f46c3a4b459);
+            
+        
+
+        marker_496a71a83ef6c8b5bd6f4fee24106414.bindPopup(popup_8da2797e4dea62ffd73f4e99d93781be)
+        ;
+
+        
+    
+    
+            var marker_7242451575a796af831e37844175a3bb = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_02359550c8ea6a4487f6e4959ffcc05f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f7e9d92f647d27e2cd3ff93698bfc4 = $(`<div id="html_45f7e9d92f647d27e2cd3ff93698bfc4" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-10-02</div>`)[0];
+                popup_02359550c8ea6a4487f6e4959ffcc05f.setContent(html_45f7e9d92f647d27e2cd3ff93698bfc4);
+            
+        
+
+        marker_7242451575a796af831e37844175a3bb.bindPopup(popup_02359550c8ea6a4487f6e4959ffcc05f)
+        ;
+
+        
+    
+    
+            var marker_ccf7ff4ec7fa821cfe0ec8d020c43260 = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_face51e2baa9a4aa60b4d19b416243fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_154beed94c5b5cfa6772d88969dba4d2 = $(`<div id="html_154beed94c5b5cfa6772d88969dba4d2" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-10-05</div>`)[0];
+                popup_face51e2baa9a4aa60b4d19b416243fd.setContent(html_154beed94c5b5cfa6772d88969dba4d2);
+            
+        
+
+        marker_ccf7ff4ec7fa821cfe0ec8d020c43260.bindPopup(popup_face51e2baa9a4aa60b4d19b416243fd)
+        ;
+
+        
+    
+    
+            var marker_afe50dcf71fc259931ea17942ea01c35 = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_8df85aa4146d917096e5f7fb445df370 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8e73340f696da17dfd67969fdf91329 = $(`<div id="html_d8e73340f696da17dfd67969fdf91329" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-10-09</div>`)[0];
+                popup_8df85aa4146d917096e5f7fb445df370.setContent(html_d8e73340f696da17dfd67969fdf91329);
+            
+        
+
+        marker_afe50dcf71fc259931ea17942ea01c35.bindPopup(popup_8df85aa4146d917096e5f7fb445df370)
+        ;
+
+        
+    
+    
+            var marker_d09bb5b18cacfcdd816fc5523fe4a658 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_41c362abbe5005ec2e4fc4b7ea6f2da3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cf86b57dd0320b073a16155c7a99e92 = $(`<div id="html_0cf86b57dd0320b073a16155c7a99e92" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-10-16</div>`)[0];
+                popup_41c362abbe5005ec2e4fc4b7ea6f2da3.setContent(html_0cf86b57dd0320b073a16155c7a99e92);
+            
+        
+
+        marker_d09bb5b18cacfcdd816fc5523fe4a658.bindPopup(popup_41c362abbe5005ec2e4fc4b7ea6f2da3)
+        ;
+
+        
+    
+    
+            var marker_a8ee60ee2546c59c30bb20625ecf19ae = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_769b7621fedf79b1a919084176cdfd72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85ea5745b2f15c96ed06e5b71b1d3307 = $(`<div id="html_85ea5745b2f15c96ed06e5b71b1d3307" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-10-26</div>`)[0];
+                popup_769b7621fedf79b1a919084176cdfd72.setContent(html_85ea5745b2f15c96ed06e5b71b1d3307);
+            
+        
+
+        marker_a8ee60ee2546c59c30bb20625ecf19ae.bindPopup(popup_769b7621fedf79b1a919084176cdfd72)
+        ;
+
+        
+    
+    
+            var marker_0cb83a0ec84e99214b48d8e6311e1a36 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_3da8cce03575194e1dcfafaf28c4a2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23d9d251a1b50936b4ce8a4bed2a4b5f = $(`<div id="html_23d9d251a1b50936b4ce8a4bed2a4b5f" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-10-30</div>`)[0];
+                popup_3da8cce03575194e1dcfafaf28c4a2a0.setContent(html_23d9d251a1b50936b4ce8a4bed2a4b5f);
+            
+        
+
+        marker_0cb83a0ec84e99214b48d8e6311e1a36.bindPopup(popup_3da8cce03575194e1dcfafaf28c4a2a0)
+        ;
+
+        
+    
+    
+            var marker_d1a9351355100bf06bd33b3bdfe31ace = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_b65d4c0c9d5c0bb315ddf31e8bba3c29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c4d4307608ddc5344a7b683c789adf8 = $(`<div id="html_4c4d4307608ddc5344a7b683c789adf8" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-11-06</div>`)[0];
+                popup_b65d4c0c9d5c0bb315ddf31e8bba3c29.setContent(html_4c4d4307608ddc5344a7b683c789adf8);
+            
+        
+
+        marker_d1a9351355100bf06bd33b3bdfe31ace.bindPopup(popup_b65d4c0c9d5c0bb315ddf31e8bba3c29)
+        ;
+
+        
+    
+    
+            var marker_3f4d7360b21516db88de881a1e0e38a9 = L.marker(
+                [-7.8888, 110.3281],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_f51c4abacfebf520ee545e0f89be2677 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e9482f57564a8c8855bd5e110d2880a = $(`<div id="html_4e9482f57564a8c8855bd5e110d2880a" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-11-10</div>`)[0];
+                popup_f51c4abacfebf520ee545e0f89be2677.setContent(html_4e9482f57564a8c8855bd5e110d2880a);
+            
+        
+
+        marker_3f4d7360b21516db88de881a1e0e38a9.bindPopup(popup_f51c4abacfebf520ee545e0f89be2677)
+        ;
+
+        
+    
+    
+            var marker_a543fb26ab8e449fe1ac3d502223231c = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_e42796d09f3bbd44b35a66240b6cc14d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c55d747fc8677f3d54cab2f668b167d4 = $(`<div id="html_c55d747fc8677f3d54cab2f668b167d4" style="width: 100.0%; height: 100.0%;">Harga: 35000 Rp/Kg Tanggal: 2023-11-13</div>`)[0];
+                popup_e42796d09f3bbd44b35a66240b6cc14d.setContent(html_c55d747fc8677f3d54cab2f668b167d4);
+            
+        
+
+        marker_a543fb26ab8e449fe1ac3d502223231c.bindPopup(popup_e42796d09f3bbd44b35a66240b6cc14d)
+        ;
+
+        
+    
+    
+            var marker_06fb1aa60dcf049adf090f6c997ffbd2 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_cfb604e3e8b4dd0a4992b575035a1c2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cecb1005df6dbce611228ec9ef0f7c98 = $(`<div id="html_cecb1005df6dbce611228ec9ef0f7c98" style="width: 100.0%; height: 100.0%;">Harga: 34000 Rp/Kg Tanggal: 2023-11-27</div>`)[0];
+                popup_cfb604e3e8b4dd0a4992b575035a1c2c.setContent(html_cecb1005df6dbce611228ec9ef0f7c98);
+            
+        
+
+        marker_06fb1aa60dcf049adf090f6c997ffbd2.bindPopup(popup_cfb604e3e8b4dd0a4992b575035a1c2c)
+        ;
+
+        
+    
+    
+            var marker_5a380b44faf029fad8a82f5d2a9aa34d = L.marker(
+                [-7.7149, 110.3084],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_4b22f207e05c136decd45d72b4aca236 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43f6c5fcc5d4fe2665ba00baf6ea2a1d = $(`<div id="html_43f6c5fcc5d4fe2665ba00baf6ea2a1d" style="width: 100.0%; height: 100.0%;">Harga: 32000 Rp/Kg Tanggal: 2023-11-30</div>`)[0];
+                popup_4b22f207e05c136decd45d72b4aca236.setContent(html_43f6c5fcc5d4fe2665ba00baf6ea2a1d);
+            
+        
+
+        marker_5a380b44faf029fad8a82f5d2a9aa34d.bindPopup(popup_4b22f207e05c136decd45d72b4aca236)
+        ;
+
+        
+    
+    
+            var marker_ab993d53a2b7d3aa9b9b4a8eaf162d9a = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_28eed3455899bb89d3ad6c0639dc5c51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a35856caa80612838ac94cf172c9a773 = $(`<div id="html_a35856caa80612838ac94cf172c9a773" style="width: 100.0%; height: 100.0%;">Harga: 32000 Rp/Kg Tanggal: 2023-12-04</div>`)[0];
+                popup_28eed3455899bb89d3ad6c0639dc5c51.setContent(html_a35856caa80612838ac94cf172c9a773);
+            
+        
+
+        marker_ab993d53a2b7d3aa9b9b4a8eaf162d9a.bindPopup(popup_28eed3455899bb89d3ad6c0639dc5c51)
+        ;
+
+        
+    
+    
+            var marker_24bf5301d4b19740877dc4be814fe989 = L.marker(
+                [-7.7925, 110.0401],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_d06cb086874dfc8ad8e2d4d417a8aa4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a4a2eeb916cabb5c00aa9529dced9c = $(`<div id="html_d7a4a2eeb916cabb5c00aa9529dced9c" style="width: 100.0%; height: 100.0%;">Harga: 32000 Rp/Kg Tanggal: 2023-12-07</div>`)[0];
+                popup_d06cb086874dfc8ad8e2d4d417a8aa4b.setContent(html_d7a4a2eeb916cabb5c00aa9529dced9c);
+            
+        
+
+        marker_24bf5301d4b19740877dc4be814fe989.bindPopup(popup_d06cb086874dfc8ad8e2d4d417a8aa4b)
+        ;
+
+        
+    
+    
+            var marker_afc3865c765bf5aa23640fc2863214db = L.marker(
+                [-7.7956, 110.3695],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_962efe550583768b9f673530471d180b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9056eebe5430adfdfd6caa8d5ec936f = $(`<div id="html_e9056eebe5430adfdfd6caa8d5ec936f" style="width: 100.0%; height: 100.0%;">Harga: 33000 Rp/Kg Tanggal: 2023-12-11</div>`)[0];
+                popup_962efe550583768b9f673530471d180b.setContent(html_e9056eebe5430adfdfd6caa8d5ec936f);
+            
+        
+
+        marker_afc3865c765bf5aa23640fc2863214db.bindPopup(popup_962efe550583768b9f673530471d180b)
+        ;
+
+        
+    
+    
+            var marker_770ff47025b1842cc1b0454cf20bdee9 = L.marker(
+                [-7.9892, 110.3176],
+                {}
+            ).addTo(marker_cluster_31404595c7ec99aa988507596057efdb);
+        
+    
+        var popup_fa02ad13bf27a7c3dfd117d7d0a38837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8a6e71a770697d34d888d18fa0535fb = $(`<div id="html_d8a6e71a770697d34d888d18fa0535fb" style="width: 100.0%; height: 100.0%;">Harga: 33000 Rp/Kg Tanggal: 2023-12-14</div>`)[0];
+                popup_fa02ad13bf27a7c3dfd117d7d0a38837.setContent(html_d8a6e71a770697d34d888d18fa0535fb);
+            
+        
+
+        marker_770ff47025b1842cc1b0454cf20bdee9.bindPopup(popup_fa02ad13bf27a7c3dfd117d7d0a38837)
+        ;
+
+        
+    
+    
+            marker_cluster_31404595c7ec99aa988507596057efdb.addTo(map_2387e77f62d3829d3df2dba4016921ca);
+        
+</script>
+</html>
